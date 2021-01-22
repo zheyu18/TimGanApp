@@ -4,7 +4,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
 
-class MainAdapter(var data:List<Fragment> = ArrayList(),var titles:List<String>,fm:FragmentManager):FragmentStatePagerAdapter(fm) {
+class MainAdapter(var data:List<Fragment> = ArrayList(),var titles:Array<String>,fm:FragmentManager):FragmentStatePagerAdapter(fm) {
     override fun getItem(position: Int): Fragment = data[position]
 
     override fun getCount(): Int = data.size
